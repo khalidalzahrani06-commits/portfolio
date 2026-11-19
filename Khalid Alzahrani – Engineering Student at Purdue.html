@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khalid Alzahrani – Engineering Student at Purdue</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: {
+  mono: ['"JetBrains Mono"', 'ui-monospace', 'Menlo', 'monospace'],
+  sans: ['Inter', 'system-ui', 'sans-serif'] } } } };
+(function(){ var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.classList.toggle('dark', d); })();
+</script>
+<style>
+  :root { box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  .ring-grad { background: conic-gradient(from 200deg, #3b82f6, #8b5cf6, #ef4444, #f59e0b, #22c55e, #3b82f6); }
+</style>
+</head>
+<body class="bg-zinc-50 text-zinc-800 dark:bg-zinc-950 dark:text-zinc-200 font-mono antialiased">
+
+<header class="sticky top-0 z-20 backdrop-blur bg-zinc-50/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
+  <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href="#top" class="font-bold tracking-tight">Khalid Alzahrani</a>
+    <nav class="hidden md:flex gap-5 text-sm text-zinc-500 dark:text-zinc-400">
+      <a class="hover:text-emerald-600 dark:hover:text-emerald-400" href="#about">About</a>
+      <a class="hover:text-emerald-600 dark:hover:text-emerald-400" href="#experience">Education</a>
+      <a class="hover:text-emerald-600 dark:hover:text-emerald-400" href="#projects">Projects</a>
+      <a class="hover:text-emerald-600 dark:hover:text-emerald-400" href="#skills">Skills</a>
+      <a class="hover:text-emerald-600 dark:hover:text-emerald-400" href="#contact">Contact</a>
+    </nav>
+    <button id="theme" aria-label="Toggle theme" class="w-9 h-9 rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900">◐</button>
+  </div>
+</header>
+
+<div id="top" class="max-w-6xl mx-auto px-4 py-8 grid lg:grid-cols-[1fr_300px] gap-6">
+
+  <main class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-6 md:p-10 space-y-12">
+
+    <section id="about" class="flex flex-col-reverse md:flex-row gap-8 items-start">
+      <div class="flex-1">
+        <h1 class="text-2xl md:text-3xl font-bold leading-tight">Khalid Alzahrani – Engineering Student &amp; Builder</h1>
+        <p class="mt-4 text-sm leading-7 text-zinc-600 dark:text-zinc-400">A Purdue University student studying mechanical engineering, software engineering and AI. I spend my time building practical projects that sit between hardware, software and machine learning, and I learn best by shipping real things.</p>
+        <h2 class="mt-8 font-semibold">Known for</h2>
+        <ul class="mt-2 space-y-1 text-sm text-zinc-600 dark:text-zinc-400">
+          <li>- Studying at Purdue University</li>
+          <li>- Mechanical engineering + software + AI</li>
+          <li>- Lots of hands-on, practical projects</li>
+          <li>- Learning by building and shipping</li>
+        </ul>
+        <h2 class="mt-8 font-semibold">Coding and Professional Profiles</h2>
+        <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-zinc-600 dark:text-zinc-400">
+          <a class="hover:underline" href="#">↗ GitHub</a><a class="hover:underline" href="#">↗ LinkedIn</a>
+        </div>
+        <p class="mt-4 text-sm text-zinc-500">⌖ Purdue University, Indiana</p>
+      </div>
+      <div class="w-full md:w-56 flex flex-col items-center gap-3 shrink-0">
+        <div class="ring-grad p-1 rounded-full w-44 h-44">
+          <div class="w-full h-full rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-5xl font-bold text-zinc-400">KA</div>
+        </div>
+        <a href="#" class="w-full text-center text-sm font-medium rounded-lg py-2.5 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900">Resume</a>
+        <a href="#contact" class="w-full text-center text-sm rounded-lg py-2.5 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800">Schedule a meeting</a>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="text-lg font-bold mb-5">Education</h2>
+      <div class="space-y-5">
+        <div class="flex justify-between gap-4"><div><p class="font-medium">Purdue University</p><p class="text-xs text-zinc-500">Mechanical Engineering · Software Engineering · AI</p></div><div class="text-right text-xs text-zinc-500"><p>Indiana, USA</p><p>Expected 2029</p></div></div>
+        <div class="flex justify-between gap-4"><div><p class="font-medium">Self-Directed Projects</p><p class="text-xs text-zinc-500">Practical builds across software, hardware and AI</p></div><div class="text-right text-xs text-zinc-500"><p>Personal</p><p>Ongoing</p></div></div>
+        
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="text-lg font-bold mb-5">Projects</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <a href="#" class="block rounded-xl border border-zinc-200 dark:border-zinc-800 p-4 hover:border-emerald-500 transition">
+          <p class="font-medium">Realtime Gateway</p>
+          <p class="mt-1 text-xs leading-5 text-zinc-500">WebSocket gateway handling thousands of concurrent connections.</p>
+          <p class="mt-3 text-[11px] text-emerald-600 dark:text-emerald-400">Node.js · Redis · Docker</p>
+        </a>
+        <a href="#" class="block rounded-xl border border-zinc-200 dark:border-zinc-800 p-4 hover:border-emerald-500 transition">
+          <p class="font-medium">AI Assistant App</p>
+          <p class="mt-1 text-xs leading-5 text-zinc-500">A practical tool that uses language models to automate a real task.</p>
+          <p class="mt-3 text-[11px] text-emerald-600 dark:text-emerald-400">Python · TypeScript · LLM APIs</p>
+        </a>
+        <a href="#" class="block rounded-xl border border-zinc-200 dark:border-zinc-800 p-4 hover:border-emerald-500 transition">
+          <p class="font-medium">Mechatronics Build</p>
+          <p class="mt-1 text-xs leading-5 text-zinc-500">Sensors, a microcontroller and control code in one working prototype.</p>
+          <p class="mt-3 text-[11px] text-emerald-600 dark:text-emerald-400">C++ · Arduino · CAD</p>
+        </a>
+        <a href="#" class="block rounded-xl border border-zinc-200 dark:border-zinc-800 p-4 hover:border-emerald-500 transition">
+          <p class="font-medium">Open Source Tool</p>
+          <p class="mt-1 text-xs leading-5 text-zinc-500">A small CLI used by developers around the world.</p>
+          <p class="mt-3 text-[11px] text-emerald-600 dark:text-emerald-400">Bun · Hono</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="text-lg font-bold mb-5">Skills</h2>
+      <dl class="grid grid-cols-[110px_1fr] gap-y-3 text-sm">
+        <dt class="font-medium">Languages</dt><dd class="text-zinc-500">JavaScript, TypeScript, Python, C/C++, SQL</dd>
+        <dt class="font-medium">AI / ML</dt><dd class="text-zinc-500">PyTorch, scikit-learn, LLM APIs</dd>
+        <dt class="font-medium">Mechanical</dt><dd class="text-zinc-500">CAD, 3D printing, MATLAB</dd>
+        <dt class="font-medium">Tools</dt><dd class="text-zinc-500">Git, Docker, Linux</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="text-sm">
+      <h2 class="text-lg font-bold mb-3">Contact</h2>
+      <p class="text-zinc-500">Open to internships, research and project collaborations.</p>
+      <a href="mailto:kalzahra@purdue.edu" class="inline-block mt-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 font-medium">kalzahra@purdue.edu</a>
+    </section>
+  </main>
+
+  <aside class="space-y-4">
+    <div class="rounded-2xl border border-emerald-200 dark:border-emerald-900 bg-gradient-to-br from-emerald-50 to-white dark:from-emerald-950/60 dark:to-zinc-900 p-5">
+      <p class="text-xs text-emerald-700 dark:text-emerald-400 font-semibold">● Now</p>
+      <p class="mt-2 font-semibold">Building practical projects</p>
+      <p class="mt-2 text-xs leading-5 text-zinc-500">Engineering student at Purdue building across mechanical, software and AI. Happy to talk projects and collaborations.</p>
+      <a href="#contact" class="inline-block mt-4 text-xs font-semibold rounded-md bg-emerald-600 text-white px-3 py-1.5">Let’s talk</a>
+    </div>
+    <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-5">
+      <p class="text-xs text-zinc-500">Based in</p>
+      <p class="font-semibold">Indiana, USA</p>
+      <p id="clock" class="mt-2 text-3xl font-bold">--:--</p>
+      <p class="text-xs text-zinc-500 mt-1">Open to internships and collaborations</p>
+    </div>
+    <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-5 text-sm">
+      <p class="font-semibold mb-3">Find me on</p>
+      <ul class="space-y-2 text-zinc-500">
+        <li><a class="hover:text-emerald-500" href="#">GitHub ↗</a></li>
+        <li><a class="hover:text-emerald-500" href="#">LinkedIn ↗</a></li>
+        <li><a class="hover:text-emerald-500" href="#">YouTube ↗</a></li>
+        <li><a class="hover:text-emerald-500" href="mailto:kalzahra@purdue.edu">Email ↗</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer class="text-center text-xs text-zinc-500 pb-8">© 2026 Khalid Alzahrani</footer>
+
+<script>
+document.getElementById('theme').addEventListener('click', function(){ document.documentElement.classList.toggle('dark'); });
+function tick(){ document.getElementById('clock').textContent = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}); }
+tick(); setInterval(tick, 30000);
+</script>
+</body>
+</html>
